@@ -187,7 +187,6 @@
   .pillar .num{font-family:var(--serif);font-style:italic;font-size:42px;line-height:1;color:var(--accent-deep)}
   .pillar h3{font-family:var(--serif);font-size:30px;line-height:1.1;margin:0;font-weight:400;letter-spacing:-.01em}
   .pillar p{font-size:14.5px;line-height:1.55;color:#3d3658;margin:0}
-  .pillar .ico{width:42px;height:42px;border-radius:50%;background:#fff;display:grid;place-items:center;margin-bottom:6px}
   .pillars-foot{margin-top:48px;font-family:var(--serif);font-style:italic;font-size:clamp(22px,2vw,30px);max-width:36ch;color:#2A2640}
 
   /* ── Program / 12 weeks ───────────────── */
@@ -294,6 +293,7 @@
   .price .h-section .it{font-style:italic;color:var(--ink)}
   .price-body{color:var(--ink-2);font-size:17px;line-height:1.55;max-width:48ch;margin-top:24px}
   .plans{display:flex;flex-direction:column;gap:14px}
+  .price-currency{margin:14px 0 0;font-size:12.5px;color:var(--ink-2);letter-spacing:.02em}
   .plan{border:1px solid var(--surface-border);border-radius:22px;padding:28px;display:flex;justify-content:space-between;align-items:center;gap:24px;transition:all .2s ease;background:rgba(255,255,255,.4);color:var(--ink)}
   .plan.featured{background:#fff;color:var(--ink);border-color:rgba(255,255,255,.9);box-shadow:0 16px 40px -18px rgba(42,38,64,.15)}
   .plan h4{margin:0 0 4px;font-family:var(--sans);font-weight:600;font-size:14px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2)}
@@ -398,7 +398,7 @@
     </a>
     <div class="nav-links">
       <a href="#problema">El problema</a>
-      <a href="#pilares">Los 4 pilares</a>
+      <a href="#pilares">Los 3 pilares</a>
       <a href="#programa">Programa</a>
       <a href="#resultados">Resultados</a>
       <a href="#claudia">Sobre Claudia</a>
@@ -406,7 +406,7 @@
     </div>
     <a href="https://wa.me/message/423P6PMTKGPOB1" target="_blank" rel="noopener noreferrer" class="nav-cta">
       <svg class="wa" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.7 14.95L2 22l5.2-1.36A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.07-1.11l-.29-.17-3.08.8.83-3-.19-.31A8 8 0 1 1 12 20Zm4.6-5.94c-.25-.13-1.5-.74-1.74-.83-.23-.08-.4-.13-.57.13-.17.25-.65.83-.8 1-.15.17-.3.19-.55.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.25-1.5-1.4-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.3.38-.45.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.57-1.37-.78-1.88-.21-.5-.42-.43-.57-.44h-.49c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.43 1.03 2.6.13.17 1.78 2.7 4.31 3.79.6.26 1.07.42 1.43.54.6.19 1.15.16 1.58.1.48-.07 1.5-.61 1.71-1.2.21-.59.21-1.09.15-1.2-.06-.11-.23-.17-.48-.3Z"/></svg>
-      <span class="nav-cta__full">Quiero empezar</span><span class="nav-cta__short">Empezar</span>
+      <span class="nav-cta__full">Quiero más información</span><span class="nav-cta__short">Más info</span>
     </a>
     <button class="nav-menu-btn" type="button" aria-label="Abrir menú" aria-expanded="false" id="nav-menu-btn">
       <span></span><span></span><span></span>
@@ -414,12 +414,12 @@
   </div>
   <div class="nav-drawer" id="nav-drawer" hidden>
     <a href="#problema">El problema</a>
-    <a href="#pilares">Los 4 pilares</a>
+    <a href="#pilares">Los 3 pilares</a>
     <a href="#programa">Programa</a>
     <a href="#resultados">Resultados</a>
     <a href="#claudia">Sobre Claudia</a>
     <a href="#faq">Preguntas</a>
-    <a href="https://wa.me/message/423P6PMTKGPOB1" target="_blank" rel="noopener noreferrer">Quiero empezar</a>
+    <a href="https://wa.me/message/423P6PMTKGPOB1" target="_blank" rel="noopener noreferrer">Quiero más información</a>
   </div>
 </nav>
 
@@ -435,10 +435,10 @@
         <p class="hero-sub">Aprende a regularlo desde los hábitos —<em> alimentación, movimiento y sistema nervioso </em>— con acompañamiento profesional durante 12 semanas.</p>
         <div class="cta-row">
           <a href="https://wa.me/message/423P6PMTKGPOB1" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-            Quiero empezar
+            Quiero más información
             <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
           </a>
-          <a href="#programa" class="btn btn-ghost">Ver el programa</a>
+          <a href="#video-programa" class="btn btn-ghost">Ver el programa</a>
         </div>
         <div class="hero-meta">
           <div class="pip"><b>12 semanas</b>de programa</div>
@@ -468,8 +468,8 @@
 <!-- ░░ TAPE ░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
 <div class="tape">
   <div class="tape-track">
-    <span>resistencia a la insulina <i class="dot"></i> prediabetes <i class="dot"></i> hábitos sostenibles <i class="dot"></i> comida real <i class="dot"></i> salud metabólica <i class="dot"></i></span>
-    <span>resistencia a la insulina <i class="dot"></i> prediabetes <i class="dot"></i> hábitos sostenibles <i class="dot"></i> comida real <i class="dot"></i> salud metabólica <i class="dot"></i></span>
+    <span>Resistencia a la insulina <i class="dot"></i> Prediabetes <i class="dot"></i> Hábitos sostenibles <i class="dot"></i> Comida real <i class="dot"></i> Salud metabólica <i class="dot"></i></span>
+    <span>Resistencia a la insulina <i class="dot"></i> Prediabetes <i class="dot"></i> Hábitos sostenibles <i class="dot"></i> Comida real <i class="dot"></i> Salud metabólica <i class="dot"></i></span>
   </div>
 </div>
 
@@ -496,7 +496,7 @@
   <div class="wrap two-col">
     <div>
       <span class="eyebrow">El problema</span>
-      <h2 class="h-section" style="margin-top:24px">Te dijeron que tu metabolismo anda mal. <span class="it">¿Y ahora qué?</span></h2>
+      <h2 class="h-section" style="margin-top:24px">Tu metabolismo no está funcionando bien. <span class="it">¿Y ahora qué?</span></h2>
     </div>
     <div class="problem-body">
       
@@ -506,29 +506,26 @@
   </div>
 </section>
 
-<!-- ░░ 4 PILARES ░░░░░░░░░░░░░░░░░░░░░░░ -->
+<!-- ░░ 3 PILARES ░░░░░░░░░░░░░░░░░░░░░░░ -->
 <section class="pillars paper" id="pilares">
   <div class="wrap">
     <span class="eyebrow">Por qué los enfoques típicos no funcionan</span>
     <h2 class="h-section">No es solo <span class="it">la comida.</span></h2>
-    <p class="lede">La mayoría de los planes de nutrición atacan un solo frente. Nosotros vemos la salud de forma integral.</p>
+    <p class="lede">La mayoría de los tratamientos atacan un solo frente. Te propongo cambiar el enfoque y ver la salud desde un punto de vista integral.</p>
 
     <div class="pillars-grid">
       <div class="pillar">
-        <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2A2640" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2.5 2 4 4.5 4 7a4 4 0 1 1-8 0c0-2.5 1.5-5 4-7Z"/><path d="M8 14l-2 7M16 14l2 7"/></svg></div>
         <div class="num">01</div>
         <h3>Alimentación</h3>
         <p>Comida real, sin restricciones absurdas, sin contar calorías hasta volverse loco. Aprendes a comer bien, no a temerle a la comida.</p>
       </div>
       
       <div class="pillar">
-        <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2A2640" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h3l3-7 4 14 3-7h5"/></svg></div>
         <div class="num">02</div>
         <h3>Movimiento</h3>
         <p>No se trata de matarte en el gym. Se trata de moverte de forma constante e inteligente. Construimos rutinas que sí sostienes.</p>
       </div>
       <div class="pillar">
-        <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2A2640" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-7-11a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 6.5-7 11-7 11Z"/></svg></div>
         <div class="num">03</div>
         <h3>Sistema Nervioso</h3>
         <p>El estrés y la falta de sueño empeoran el metabolismo. Trabajamos la higiene del sueño y la regulación del sistema nervioso.</p>
@@ -619,7 +616,7 @@
       <article class="result-card">
         <div class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2D2D2D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-10"/><path d="M14 5h7v7"/></svg></div>
         <h3>Mayor estabilidad metabólica</h3>
-        <p>Glucosa e insulina más estables a lo largo del día.</p>
+        <p>Glucosa, insulina, saciedad, y otras señales metabólicas más estables a lo largo del día.</p>
       </article>
       <article class="result-card">
         <div class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2D2D2D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8Z"/></svg></div>
@@ -644,7 +641,7 @@
       <article class="result-card">
         <div class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2D2D2D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2v7.5L6 14v8h12v-8l-4-4.5V2"/><path d="M8.5 2h7"/><path d="M9 14h6"/></svg></div>
         <h3>Mejoras clínicas</h3>
-        <p>Posibles mejoras en glucosa, insulina y lípidos en sangre según tu punto de partida.</p>
+        <p>Indicadores clínicos como glucosa, insulina, triglicéridos, colesterol, y otros relevantes a tu caso empiezan a mejorar.</p>
       </article>
     </div>
   </div>
@@ -664,21 +661,20 @@
           loading="lazy"
           decoding="async"
         />
-        <span class="stamp">Nutricionista · Salud metabólica</span>
+        <span class="stamp">Nutricionista clínica</span>
       </div>
       <div>
         <span class="eyebrow">Sobre Claudia</span>
         <h2 class="about-name">Hola, <span class="it">soy Claudia.</span></h2>
         <div class="about-body">
-          <p>Soy nutricionista especializada en salud metabólica. Mi enfoque es simple: <em>comer comida real es lo que importa. Punto.</em></p>
-          <p>Trabajo con personas que tienen resistencia a la insulina y prediabetes que quieren tomar control de su salud sin dietas extremas ni información confusa. Me interesa que entiendas tu cuerpo — no que dependas de mí para siempre.</p>
-          <p>Mi especialidad está en los cuatro pilares que mueven la aguja de verdad.</p>
+          <p>Nutricionista clínica. Mi enfoque es simple: <em>la salud es integral.</em> Alimentación, movimiento y sistema nervioso. Trabajar todos juntos, no de manera aislada.</p>
+          <p>Trabajo con personas con alteraciones en el metabolismo que quieren tomar control de su salud sin dietas extremas ni información confusa. Me interesa que entiendas tu cuerpo — no que dependas de mí para siempre.</p>
+          <p>Mi enfoque está en los tres pilares que mueven la aguja de verdad: alimentación, movimiento y sistema nervioso.</p>
         </div>
         <div class="about-creds">
-          <span class="cred">Insulina</span>
-          <span class="cred">Glucosa</span>
-          <span class="cred">Inflamación</span>
-          <span class="cred">Hábitos sostenibles</span>
+          <span class="cred">Alimentación</span>
+          <span class="cred">Movimiento</span>
+          <span class="cred">Sistema nervioso</span>
         </div>
       </div>
     </div>
@@ -769,15 +765,14 @@
         <div class="plan-meta">
           <div><b>12</b> semanas</div>
           <div><b>1:1</b> sesiones</div>
-          <div><b>Online</b> o presencial</div>
-          <div><b>Sin</b> letra chica</div>
+          <div><b>Online</b></div>
         </div>
       </div>
       <div class="plans">
         <div class="plan featured">
           <div>
             <h4>Pago único · Recomendado</h4>
-            <div class="amt">$950 <small>USD · ahorras $40</small></div>
+            <div class="amt">$950 <small>ahorras $40</small></div>
           </div>
           <a href="https://wa.me/message/423P6PMTKGPOB1" class="pick" target="_blank" rel="noopener noreferrer">
             Elegir
@@ -787,13 +782,14 @@
         <div class="plan">
           <div>
             <h4>3 cuotas mensuales</h4>
-            <div class="amt">$330 <small>USD × 3 · total $990 USD</small></div>
+            <div class="amt">$330 <small>Total $990</small></div>
           </div>
           <a href="https://wa.me/message/423P6PMTKGPOB1" class="pick" target="_blank" rel="noopener noreferrer">
             Elegir
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
           </a>
         </div>
+        <p class="price-currency">Precios en dólares estadounidenses (USD).</p>
       </div>
     </div>
 
@@ -804,10 +800,10 @@
 <section class="cta-close">
   <div class="wrap">
     <div class="final-cta">
-      <h2>¿Lista para <span class="it">empezar?</span></h2>
+      <h2>¿<span class="it">Listo/a</span> para empezar?</h2>
       <a href="https://wa.me/message/423P6PMTKGPOB1" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.7 14.95L2 22l5.2-1.36A10 10 0 1 0 12 2Zm4.6 12.06c-.25-.13-1.5-.74-1.74-.83-.23-.08-.4-.13-.57.13-.17.25-.65.83-.8 1-.15.17-.3.19-.55.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.25-1.5-1.4-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.3.38-.45.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.57-1.37-.78-1.88-.21-.5-.42-.43-.57-.44h-.49c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.43 1.03 2.6.13.17 1.78 2.7 4.31 3.79.6.26 1.07.42 1.43.54.6.19 1.15.16 1.58.1.48-.07 1.5-.61 1.71-1.2.21-.59.21-1.09.15-1.2-.06-.11-.23-.17-.48-.3Z"/></svg>
-        Quiero inscribirme
+        Quiero más información
         <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
       </a>
     </div>
