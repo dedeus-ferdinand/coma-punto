@@ -75,7 +75,6 @@
   .nav-links a:hover{color:var(--ink)}
   .nav-cta{background:var(--ink);color:#fff;padding:12px 22px;border-radius:999px;font-size:14px;font-weight:500;display:inline-flex;align-items:center;gap:8px;transition:transform .2s ease, background .2s ease;white-space:nowrap;flex-shrink:0}
   .nav-cta:hover{background:var(--accent-deep);transform:translateY(-1px)}
-  .nav-cta .wa{width:14px;height:14px;flex-shrink:0}
   .nav-cta__short{display:none}
   @media (max-width:440px){
     .nav-cta{padding:10px 15px;font-size:13px;gap:6px}
@@ -312,7 +311,10 @@
   @media (max-width:760px){ .final-cta{grid-template-columns:1fr} }
   .final-cta h2{font-family:var(--serif);font-size:clamp(40px,5vw,72px);line-height:1.0;margin:0;font-weight:400;letter-spacing:-.015em;text-wrap:balance;color:var(--ink)}
   .final-cta h2 .it{font-style:italic;color:var(--ink)}
+  .final-cta .cta-row{justify-content:flex-end}
+  @media (max-width:760px){ .final-cta .cta-row{justify-content:flex-start} }
   .cta-close .final-cta .btn-primary{font-size:17px;padding:22px 32px}
+  .btn .wa{width:18px;height:18px;flex-shrink:0}
 
   /* ── Footer ───────────────────────────── */
   footer{background:var(--ink);color:#8a847e;padding:36px 0;border-top:1px solid #2c2c2c}
@@ -404,9 +406,8 @@
       <a href="#claudia">Sobre Claudia</a>
       <a href="#faq">Preguntas</a>
     </div>
-    <a href="https://wa.me/message/423P6PMTKGPOB1" target="_blank" rel="noopener noreferrer" class="nav-cta">
-      <svg class="wa" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.7 14.95L2 22l5.2-1.36A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.07-1.11l-.29-.17-3.08.8.83-3-.19-.31A8 8 0 1 1 12 20Zm4.6-5.94c-.25-.13-1.5-.74-1.74-.83-.23-.08-.4-.13-.57.13-.17.25-.65.83-.8 1-.15.17-.3.19-.55.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.25-1.5-1.4-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.3.38-.45.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.57-1.37-.78-1.88-.21-.5-.42-.43-.57-.44h-.49c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.43 1.03 2.6.13.17 1.78 2.7 4.31 3.79.6.26 1.07.42 1.43.54.6.19 1.15.16 1.58.1.48-.07 1.5-.61 1.71-1.2.21-.59.21-1.09.15-1.2-.06-.11-.23-.17-.48-.3Z"/></svg>
-      <span class="nav-cta__full">Quiero más información</span><span class="nav-cta__short">Más info</span>
+    <a href="https://www.jotform.com/form/261523706289058" target="_blank" rel="noopener noreferrer" class="nav-cta">
+      <span class="nav-cta__full">Agendar una llamada</span><span class="nav-cta__short">Agendar</span>
     </a>
     <button class="nav-menu-btn" type="button" aria-label="Abrir menú" aria-expanded="false" id="nav-menu-btn">
       <span></span><span></span><span></span>
@@ -419,7 +420,7 @@
     <a href="#resultados">Resultados</a>
     <a href="#claudia">Sobre Claudia</a>
     <a href="#faq">Preguntas</a>
-    <a href="https://wa.me/message/423P6PMTKGPOB1" target="_blank" rel="noopener noreferrer">Quiero más información</a>
+    <a href="https://www.jotform.com/form/261523706289058" target="_blank" rel="noopener noreferrer">Agendar una llamada</a>
   </div>
 </nav>
 
@@ -434,11 +435,14 @@
         </h1>
         <p class="hero-sub">Aprende a regularlo desde los hábitos —<em> alimentación, movimiento y sistema nervioso </em>— con acompañamiento profesional durante 12 semanas.</p>
         <div class="cta-row">
-          <a href="https://wa.me/message/423P6PMTKGPOB1" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-            Quiero más información
+          <a href="https://www.jotform.com/form/261523706289058" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            Agendar una llamada
             <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
           </a>
-          <a href="#video-programa" class="btn btn-ghost">Ver el programa</a>
+          <a href="https://wa.me/message/423P6PMTKGPOB1" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+            <svg class="wa" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.7 14.95L2 22l5.2-1.36A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.07-1.11l-.29-.17-3.08.8.83-3-.19-.31A8 8 0 1 1 12 20Zm4.6-5.94c-.25-.13-1.5-.74-1.74-.83-.23-.08-.4-.13-.57.13-.17.25-.65.83-.8 1-.15.17-.3.19-.55.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.25-1.5-1.4-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.3.38-.45.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.57-1.37-.78-1.88-.21-.5-.42-.43-.57-.44h-.49c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.43 1.03 2.6.13.17 1.78 2.7 4.31 3.79.6.26 1.07.42 1.43.54.6.19 1.15.16 1.58.1.48-.07 1.5-.61 1.71-1.2.21-.59.21-1.09.15-1.2-.06-.11-.23-.17-.48-.3Z"/></svg>
+            Quiero más información
+          </a>
         </div>
         <div class="hero-meta">
           <div class="pip"><b>12 semanas</b>de programa</div>
@@ -801,11 +805,16 @@
   <div class="wrap">
     <div class="final-cta">
       <h2>¿<span class="it">Listo/a</span> para empezar?</h2>
-      <a href="https://wa.me/message/423P6PMTKGPOB1" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.7 14.95L2 22l5.2-1.36A10 10 0 1 0 12 2Zm4.6 12.06c-.25-.13-1.5-.74-1.74-.83-.23-.08-.4-.13-.57.13-.17.25-.65.83-.8 1-.15.17-.3.19-.55.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.25-1.5-1.4-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.3.38-.45.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.57-1.37-.78-1.88-.21-.5-.42-.43-.57-.44h-.49c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.43 1.03 2.6.13.17 1.78 2.7 4.31 3.79.6.26 1.07.42 1.43.54.6.19 1.15.16 1.58.1.48-.07 1.5-.61 1.71-1.2.21-.59.21-1.09.15-1.2-.06-.11-.23-.17-.48-.3Z"/></svg>
-        Quiero más información
-        <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
-      </a>
+      <div class="cta-row">
+        <a href="https://www.jotform.com/form/261523706289058" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          Agendar una llamada
+          <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+        <a href="https://wa.me/message/423P6PMTKGPOB1" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">
+          <svg class="wa" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.7 14.95L2 22l5.2-1.36A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.07-1.11l-.29-.17-3.08.8.83-3-.19-.31A8 8 0 1 1 12 20Zm4.6-5.94c-.25-.13-1.5-.74-1.74-.83-.23-.08-.4-.13-.57.13-.17.25-.65.83-.8 1-.15.17-.3.19-.55.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.25-1.5-1.4-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.3.38-.45.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.57-1.37-.78-1.88-.21-.5-.42-.43-.57-.44h-.49c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.43 1.03 2.6.13.17 1.78 2.7 4.31 3.79.6.26 1.07.42 1.43.54.6.19 1.15.16 1.58.1.48-.07 1.5-.61 1.71-1.2.21-.59.21-1.09.15-1.2-.06-.11-.23-.17-.48-.3Z"/></svg>
+          Quiero más información
+        </a>
+      </div>
     </div>
   </div>
 </section>
